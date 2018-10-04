@@ -337,6 +337,8 @@ func SetupViper(v *viper.Viper, filename string) {
 	v.SetDefault("adapters.sovrn.usersync_url", "//ap.lijit.com/pixel?")
 	v.SetDefault("adapters.adkerneladn.usersync_url", "https://tag.adkernel.com/syncr?gdpr={{gdpr}}&gdpr_consent={{gdpr_consent}}&r=")
 	v.SetDefault("adapters.adkerneladn.endpoint", "http://{{.Host}}/rtbpub?account={{.PublisherID}}")
+	v.SetDefault("adapters.zedo.endpoint", "https://saxp.zedo.com/asw/fmb.json")
+	v.SetDefault("adapters.zedo.usersync_url", "https://tt3.zedo.com/rs/us/fcs.html?gdpr={{gdpr}}&gdpr_consent={{gdpr_consent}}")
 
 	v.SetDefault("max_request_size", 1024*256)
 	v.SetDefault("analytics.file.filename", "")

@@ -1,0 +1,10 @@
+maintainer:
+  email: "prebidsupport@zedo.com"
+capabilities:
+  app:
+    mediaTypes:
+      - banner
+  site:
+    mediaTypes:
+      - banner
+      - video

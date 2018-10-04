@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ZEDO Adapter Params",
+    "description": "A schema which validates params accepted by the ZEDO adapter",
+  
+    "type": "object",
+    "properties": {
+      "channelCode": {
+        "type": "string",
+        "description": "The placement id.",
+        "pattern": "^[0-9]+$"
+      },
+      "dimId": {
+        "type": "string",
+        "description": "The dimension id.",
+        "pattern": "^[0-9]+$"
+      }
+    },
+  
+    "required": ["channelCode", "dimId"]
+  }
+  
